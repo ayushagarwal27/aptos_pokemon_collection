@@ -17,3 +17,5 @@ Add pokemon to their PokemonCollection resource.
 - Wallet adapter for connecting to wallet
 - Toast Notification
 - Loading State
+
+`Contract address : 0x1801bcc65720aef077114d769829df91a5305ac737cc9e0d4cee1b441e23e8e2`

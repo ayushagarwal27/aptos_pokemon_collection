@@ -12,7 +12,7 @@ import {
   useWallet,
 } from "@aptos-labs/wallet-adapter-react";
 import { ArrowLeft, ArrowRight, ChevronDown, Copy, LogOut, User } from "lucide-react";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 // Internal components
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -26,11 +26,22 @@ import {
 import { useToast } from "@/components/ui/use-toast";
 
 export function WalletSelector() {
-  const { account, connected, disconnect, wallet } = useWallet();
+  const { account, connected, disconnect, wallet, network } = useWallet();
   const { toast } = useToast();
+
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const closeDialog = useCallback(() => setIsDialogOpen(false), []);
+
+  useEffect(() => {
+    if (network?.name === "mainnet") {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "Only Testnet Available",
+      });
+    }
+  }, [network]);
 
   const copyAddress = useCallback(async () => {
     if (!account?.address) return;

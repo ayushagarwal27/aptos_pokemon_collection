@@ -75,3 +75,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+body{
+  background-image: url("https://as1.ftcdn.net/v2/jpg/05/78/64/28/1000_F_578642828_gwPJBJddFyTmowuOzoQPRil72H0dd50b.jpg");
+  background-repeat: no-repeat;
+  background-color: pink;
+  background-size: cover;
+}

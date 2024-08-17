@@ -18,7 +18,9 @@ function App() {
           </Card>
         ) : (
           <CardHeader>
-            <CardTitle className={"text-pink-800 font-bold"}>To get started Connect a wallet</CardTitle>
+            <CardTitle className={"text-white font-bold bg-black/40 rounded-xl py-3 px-5"}>
+              To get started Connect a wallet
+            </CardTitle>
           </CardHeader>
         )}
       </div>

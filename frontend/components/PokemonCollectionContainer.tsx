@@ -106,8 +106,11 @@ export function PokemonCollectionContainer() {
         </>
       ) : pokemonCollection ? (
         <>
-          <h3 className={"capitalize text-3xl font-bold bg-pink-800 text-white w-fit rounded-lg p-2"}>
-            {pokemonCollection[0]}
+          <h3 className={"capitalize text-2xl font-bold bg-pink-800 text-white w-fit rounded-lg p-2 mx-auto"}>
+            <span className={"text-pink-200"}>Collection Name:</span>{" "}
+            <span className={"italic bg-pink-300 p-1 rounded-xl inline-block text-pink-950 text-2xl"}>
+              {pokemonCollection[0]}
+            </span>
           </h3>
           <div className={"grid grid-cols-4 gap-3"}>
             {Array(10)

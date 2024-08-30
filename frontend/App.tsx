@@ -10,7 +10,7 @@ function App() {
   const toast = useToast();
 
   useEffect(() => {
-    if (network?.name !== "testnet") {
+    if (network?.name && network?.name !== "testnet") {
       toast.toast({
         variant: "destructive",
         title: "Error",

@@ -4,7 +4,10 @@ Users can login via wallet, for creating pokemon collection, provide name for th
 
 Add pokemon to their PokemonCollection resource.
 
+- Contract deployed on testnet: [link](https://explorer.aptoslabs.com/account/0x1801bcc65720aef077114d769829df91a5305ac737cc9e0d4cee1b441e23e8e2/modules/code/my_module?network=testnet)
+
 ## Smart Contract
+- Deployed on Testnet
 - Move language
 - Struct and entry function for global storage and manipulating the resource
 - View function for getting collection data

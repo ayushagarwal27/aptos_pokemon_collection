@@ -4,6 +4,8 @@ Users can login via wallet, for creating pokemon collection, provide name for th
 
 Add pokemon to their PokemonCollection resource.
 
+- PokeVault dApp [link](https://aptos-pokemon-collection.vercel.app/)
+
 - Contract deployed on testnet: [link](https://explorer.aptoslabs.com/account/0x1801bcc65720aef077114d769829df91a5305ac737cc9e0d4cee1b441e23e8e2/modules/code/my_module?network=testnet)
 
 ## Smart Contract
@@ -57,5 +59,9 @@ Test case for testing over all flow
 - Wallet adapter for connecting to wallet
 - Toast Notification
 - Loading State
+
+## Social Link
+- [Twitter](https://x.com/ayushagarwal027)
+- [Portfolio](https://ayush-website.netlify.app/)
 
 `Contract address : 0x1801bcc65720aef077114d769829df91a5305ac737cc9e0d4cee1b441e23e8e2`
